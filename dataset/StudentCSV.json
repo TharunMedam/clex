@@ -1,0 +1,89 @@
+{
+	"name": "StudentCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BlobStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "student-dataset-1.csv",
+				"container": "ccs"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "StudentID",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "Latitude",
+				"type": "String"
+			},
+			{
+				"name": "Longitude",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "Ethnic.group",
+				"type": "String"
+			},
+			{
+				"name": "Age",
+				"type": "String"
+			},
+			{
+				"name": "English.grade",
+				"type": "String"
+			},
+			{
+				"name": "Math.grade",
+				"type": "String"
+			},
+			{
+				"name": "Sciences.grade",
+				"type": "String"
+			},
+			{
+				"name": "Language.grade",
+				"type": "String"
+			},
+			{
+				"name": "Portfolio.rating",
+				"type": "String"
+			},
+			{
+				"name": "Coverletter.rating",
+				"type": "String"
+			},
+			{
+				"name": "Refletter.rating",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,93 @@
+{
+	"name": "SQLStudentTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSQLLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "StudentID",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Country",
+				"type": "varchar"
+			},
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "Latitude",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Longitude",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Gender",
+				"type": "varchar"
+			},
+			{
+				"name": "EthnicGroup",
+				"type": "varchar"
+			},
+			{
+				"name": "Age",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "EnglishGrade",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "MathGrade",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "SciencesGrade",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "LanguageGrade",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "PortfolioRating",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "CoverLetterRating",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "RefLetterRating",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Student1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
